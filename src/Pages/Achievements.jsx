@@ -30,11 +30,15 @@ export default function AchievementsPage() {
       <div className="max-w-4xl mx-auto space-y-8 border-l-4 border-purple-200 pl-10 mb-16 relative">
 
         {[
-          { year: "2018", title: "Licensed as Financial Advisor" },
-          { year: "2019", title: "Promoted to Unit Manager" },
-          { year: "2021", title: "MDRT Qualifier" },
-          { year: "2023", title: "Top Recruiter – Alexandrite 2" },
-        ].map((item, idx) => (
+  { year: "October 2018", title: "Promoted to Assistant Unit Manager" },
+  { year: "2019–2024", title: "Early National Achievers Club Member" },
+  { year: "2019–2024", title: "Senior Achievers Club Qualifier" },
+  { year: "2021", title: "MDRT Member" },
+  { year: "2022", title: "Top PAA Producer (Branch Level)" },
+  { year: "2018–2024", title: "Consistent Team Producer" },
+  { year: "Yearly", title: "Life Club 22 Stars" },
+]
+.map((item, idx) => (
           <div key={idx} className="relative pl-4">
   <div className="absolute -left-6 top-2 w-4 h-4 bg-purple-500 rounded-full"></div>
   <h3 className="text-xl font-semibold">{item.year}</h3>
