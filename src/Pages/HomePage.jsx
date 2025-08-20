@@ -4,15 +4,17 @@ import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
 import heroImage from "../assets/hero.png";
 import maryjoyImage from "../assets/maryjoy.jpg";
-import { ShieldCheck, GraduationCap, PiggyBank, Wallet } from "lucide-react";
 import Navbar from "../components/Navbar";
 import FadeInSection from "../components/FadeInSection";
+import { FaShieldAlt, FaWheelchair, FaHeartbeat } from "react-icons/fa";
+import { GiBrokenBone, GiMoneyStack } from "react-icons/gi";
 
 const services = [
-  { icon: <ShieldCheck className="text-purple-600 w-6 h-6" />, title: "Life Insurance" },
-  { icon: <GraduationCap className="text-purple-600 w-6 h-6" />, title: "Education Fund Planning" },
-  { icon: <PiggyBank className="text-purple-600 w-6 h-6" />, title: "Investment-linked Products" },
-  { icon: <Wallet className="text-purple-600 w-6 h-6" />, title: "Retirement Planning" },
+  { icon: <FaShieldAlt className="text-purple-600 w-6 h-6" />, title: "Life Insurance" },
+  { icon: <FaWheelchair className="text-purple-600 w-6 h-6" />, title: "Disability Benefit" },
+  { icon: <GiBrokenBone className="text-purple-600 w-6 h-6" />, title: "Accident Benefit" },
+  { icon: <FaHeartbeat className="text-purple-600 w-6 h-6" />, title: "Critical Illness Benefit" },
+  { icon: <GiMoneyStack className="text-purple-600 w-6 h-6" />, title: "Investment" },
 ];
 
 export default function Home() {

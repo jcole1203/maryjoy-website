@@ -1,41 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  ShieldCheck,
-  GraduationCap,
-  PiggyBank,
-  Wallet,
-  Banknote,
-} from "lucide-react";
+// replaced lucide-react icons with react-icons to fix import error
+import { FaShieldAlt, FaWheelchair, FaBandAid, FaHeartbeat } from "react-icons/fa";
+import { GiMoneyStack } from "react-icons/gi";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import FadeInSection from "../components/FadeInSection";
 
 const services = [
   {
-    icon: <ShieldCheck className="text-purple-600 w-8 h-8" />,
+    icon: <FaShieldAlt className="text-purple-600 w-8 h-8" />,
     title: "Life Insurance",
-    description: "Protect your family's future with comprehensive coverage.",
+    description: "Protect your family's future with tailored life insurance plans.",
   },
   {
-    icon: <GraduationCap className="text-purple-600 w-8 h-8" />,
-    title: "Education Fund Planning",
-    description: "Prepare early and confidently for your child’s education.",
+    icon: <FaWheelchair className="text-purple-600 w-8 h-8" />,
+    title: "Disability Benefit",
+    description: "Income protection and support if you become unable to work.",
   },
   {
-    icon: <PiggyBank className="text-purple-600 w-8 h-8" />,
-    title: "Investment-linked Products",
-    description: "Grow your wealth while staying protected.",
+    icon: <FaBandAid className="text-purple-600 w-8 h-8" />,
+    title: "Accident Benefit",
+    description: "Immediate financial assistance for medical bills and recovery after accidents.",
   },
   {
-    icon: <Wallet className="text-purple-600 w-8 h-8" />,
-    title: "Retirement Planning",
-    description: "Ensure financial freedom in your golden years.",
+    icon: <FaHeartbeat className="text-purple-600 w-8 h-8" />,
+    title: "Critical Illness Benefit",
+    description: "Lump-sum payout to help cover treatment and recovery for serious illnesses.",
   },
   {
-    icon: <Banknote className="text-purple-600 w-8 h-8" />,
-    title: "Estate Preservation",
-    description: "Pass on your legacy with peace of mind.",
+    icon: <GiMoneyStack className="text-purple-600 w-8 h-8" />,
+    title: "Investment",
+    description: "Investment-linked solutions to grow your wealth while staying protected.",
   },
 ];
 

@@ -1,15 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "default" | "outline";
-}
-
-export const Button: React.FC<ButtonProps> = ({
-  children,
-  className = "",
-  variant = "default",
-  ...props
-}) => {
+export const Button = ({ children, className = "", variant = "default", ...props }) => {
   const baseStyles =
     "inline-flex items-center justify-center font-medium rounded-full transition-colors duration-300";
   const variants = {
@@ -19,10 +11,16 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${className}`}
+      className={`${baseStyles} ${variants[variant] || variants.default} ${className}`}
       {...props}
     >
       {children}
     </button>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(["default", "outline"]),
 };
