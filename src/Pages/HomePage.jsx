@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/hero.png";
 import maryjoyImage from "../assets/maryjoy.jpg";
 import { ShieldCheck, GraduationCap, PiggyBank, Wallet } from "lucide-react";
 import Navbar from "../components/Navbar";
